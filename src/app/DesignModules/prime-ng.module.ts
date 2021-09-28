@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {ButtonModule} from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
 import {TableModule} from 'primeng/table';
@@ -18,46 +18,35 @@ import {SidebarModule} from 'primeng/sidebar';
 import {TabViewModule} from 'primeng/tabview';
 import {TabMenuModule} from 'primeng/tabmenu';
 
+const primengModule = [
+  CommonModule,
+  ButtonModule,
+  ToastModule,
+  TableModule,
+  InputTextModule,
+  ScrollTopModule,
+  SelectButtonModule,
+  PanelModule,
+  MenuModule,
+  BreadcrumbModule,
+  ContextMenuModule,
+  TreeModule,
+  TooltipModule,
+  FieldsetModule,
+  RippleModule,
+  SidebarModule,
+  TabViewModule,
+  TabMenuModule
+]
+
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    ButtonModule,
-    ToastModule,
-    TableModule,
-    InputTextModule,
-    ScrollTopModule,
-    SelectButtonModule,
-    PanelModule,
-    MenuModule,
-    BreadcrumbModule,
-    ContextMenuModule,
-    TreeModule,
-    TooltipModule,
-    FieldsetModule,
-    RippleModule,
-    SidebarModule,
-    TabViewModule,
-    TabMenuModule
+    primengModule
   ],
   exports: [
-    TabMenuModule,
-    ButtonModule,
-    ToastModule,
-    TableModule,
-    InputTextModule,
-    ScrollTopModule,
-    SelectButtonModule,
-    PanelModule,
-    MenuModule,
-    BreadcrumbModule,
-    ContextMenuModule,
-    TreeModule,
-    TooltipModule,
-    FieldsetModule,
-    RippleModule,
-    SidebarModule,
-    TabViewModule
-]
+    primengModule
+  ]
 })
-export class PrimeNgModule { }
+export class PrimeNgModule {
+}
