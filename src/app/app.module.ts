@@ -35,7 +35,7 @@ export function HttpLoaderFactory(http: HttpClient){
     LayoutModule,
     WidgetsModule,
   ],
-  providers: [],
+  providers: [Document],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
