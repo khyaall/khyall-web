@@ -28,6 +28,7 @@ export class HomePageComponent implements OnInit {
     dots: true,
     navSpeed: 700,
     navText: ['', ''],
+    rtl: true,
     responsive: {
       0: {
         items: 1
