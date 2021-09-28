@@ -10,6 +10,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
 import { WidgetsModule } from './Widgets/widgets.module';
 import { LayoutModule } from './Layouts/layout.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { OwlModule } from 'ngx-owl-carousel';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http,'./assets/i18n/','.json')
@@ -34,6 +36,8 @@ export function HttpLoaderFactory(http: HttpClient){
     NgxSpinnerModule,
     LayoutModule,
     WidgetsModule,
+    CarouselModule,
+    // OwlModule
   ],
   providers: [Document],
   bootstrap: [AppComponent]

@@ -1,0 +1,235 @@
+.AboutKyall1{
+    position: relative;
+    background: #fff;
+}
+.AboutKyall1 .div1{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 3px #14306F solid;
+    background: #fff;
+    margin: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.AboutKyall1 .div2{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    background: url('../../../../assets/Images/about_img.png');
+    margin: 100px;
+}
+
+.AboutKyall2{
+    background: url('../../../../assets/Images/ثيبسل1.png');
+    background-position: center;
+    background-size: 70ch;
+    width: 600px;
+    height: 500px;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 30px;
+    text-align: start;
+}
+.AboutKyall2  h4{
+    color: #14306F;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #14306F !important;
+    border-color: #14306F !important;
+    border-radius: 40px !important;
+    transition: all 1s 0s ease !important;
+    -webkit-border-radius: 40px !important;
+    -moz-border-radius: 40px !important;
+    -ms-border-radius: 40px !important;
+    -o-border-radius: 40px !important;
+    -webkit-transition: all 1s 0s ease !important;
+    -moz-transition: all 1s 0s ease !important;
+    -ms-transition: all 1s 0s ease !important;
+    -o-transition: all 1s 0s ease !important;
+}
+.btn-lg{
+    width: 270px !important;
+}
+.btn-primary:hover{
+    background-color: #B69149 !important;
+    border-color: #B69149 !important;
+}
+
+.ourServices{
+    background: url('../../../../assets/Images/Corporate-Finance00.png')  no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
+.ourServices .suB{
+    min-height: 700px;
+    background-color: #142f6f8c;
+}
+.ourServices .suB h4{
+    color: #fff;
+    text-align: center;
+    margin: 60px;
+    padding-top: 50px;
+    text-decoration: underline #E8C582 9px;
+}
+.service{
+    min-height: 233px;
+    border: 3px solid #E8C582;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    .butn{
+        display: none;
+    }
+    transition: all 2s 0s ease-in-out;
+    -webkit-transition: all 2s 0s ease-in-out;
+    -moz-transition: all 2s 0s ease-in-out;
+    -ms-transition: all 2s 0s ease-in-out;
+    -o-transition: all 2s 0s ease-in-out;
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+}
+.service:hover{
+    background-color: #B69149;
+    .image{
+        display: none;
+    }
+    .butn{
+        display: block;
+    }
+}
+.serBtn{
+    color: #fff;
+    background-color: #14306F !important;
+    border-color: #14306F !important;
+    border-radius: 40px !important;
+}
+.ourProjects{
+    background: #F8F8F8;
+}
+
+.ourProjects .div1{
+    color: #14306F;
+    p{
+        line-height: 35px;
+    }
+    hr{
+        height: 12px;
+        background-color: #B69149;
+    }
+}
+.bnn{
+    border-radius: 17px !important;
+    -webkit-border-radius: 17px !important;
+    -moz-border-radius: 17px !important;
+    -ms-border-radius: 17px !important;
+    -o-border-radius: 17px !important;
+    width: 200px !important;
+}
+.elgammal{
+    background: url('../../../../assets/Images/elgamal-min.png') no-repeat;
+    background-size: 100%;
+    height: 400px;
+    border: 1px solid #14306F;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    .aboveDiv{
+        height: 400px;
+        background-color: #142f6f8e;
+        border-radius: 15px;
+        display: none;
+        padding: 30px;
+        p{
+            color: #fff;
+            font-size: 40px;
+            padding-top: 30px;
+        }
+    }
+    transition: all 1s 0s ease;
+    -webkit-transition: all 1s 0s ease;
+    -moz-transition: all 1s 0s ease;
+    -ms-transition: all 1s 0s ease;
+    -o-transition: all 1s 0s ease;
+}
+.elgammal:hover{
+    .aboveDiv{
+        display: block;
+    }
+}
+
+.whyKhyall{
+    background: #14306F;
+    height: 500px;
+    padding: 50px;
+    h3{
+        color: #E8C582;
+        font-size: 50px;
+    }
+    p{
+        color: #fff;
+        font-size: 30px;
+    }
+}
+.titl{
+    color: #14306F;
+    font-size: 40px;
+}
+.sub{
+    color: #14306F;
+    font-size: 15px;
+}
+.sectionX{
+    height: 500px;
+    background: #EFF3FF;
+}
+.whyKhyall2{
+    height: 500px;
+    background: #EFF3FF;
+}
+.sectionY{
+    background: #142f6f6b;
+    min-height: 450px;
+    .title{
+        font-size: 50px;
+        color: #14306F;
+    }
+    .sunTitle{
+        color: #000;
+        font-size: 20px;
+    }
+}
+// .item{
+//     background: #FFFFFF;
+//     border: 1px solid #B69149;
+//     border-radius: 30px;
+//     height: 200px;
+//     -webkit-border-radius: 30px;
+//     -moz-border-radius: 30px;
+//     -ms-border-radius: 30px;
+//     -o-border-radius: 30px;
+// }
+.slide{
+    background: #FFFFFF;
+    border: 1px solid #B69149;
+    border-radius: 30px;
+    //height: 200px !important;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

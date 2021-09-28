@@ -4,12 +4,14 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { PrimeNgModule } from '../DesignModules/prime-ng.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { PrimeNgModule } from '../DesignModules/prime-ng.module';
     PrimeNgModule
   ],
   exports: [
-    NavBarComponent
+    NavBarComponent, 
+    FooterComponent 
   ]
 })
 export class LayoutModule { }
