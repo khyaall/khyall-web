@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { SubNavBarComponent } from './sub-nav-bar/sub-nav-bar.component';
 import { PrimeNgModule } from '../DesignModules/prime-ng.module';
+import { SubFooterComponent } from './sub-footer/sub-footer.component';
 
 
 
 @NgModule({
   declarations: [
-    SubNavBarComponent
+    SubNavBarComponent,
+    SubFooterComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { PrimeNgModule } from '../DesignModules/prime-ng.module';
     PrimeNgModule
   ],
   exports: [
-    SubNavBarComponent
+    SubNavBarComponent,
+    SubFooterComponent
   ]
 })
 export class WidgetsModule { }

@@ -17,6 +17,7 @@ import {RippleModule} from 'primeng/ripple';
 import {SidebarModule} from 'primeng/sidebar';
 import {TabViewModule} from 'primeng/tabview';
 import {TabMenuModule} from 'primeng/tabmenu';
+import {GalleriaModule} from 'primeng/galleria';
 
 const primengModule = [
   CommonModule,
@@ -36,7 +37,8 @@ const primengModule = [
   RippleModule,
   SidebarModule,
   TabViewModule,
-  TabMenuModule
+  TabMenuModule,
+  GalleriaModule
 ]
 
 @NgModule({

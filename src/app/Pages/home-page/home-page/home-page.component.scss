@@ -5,7 +5,7 @@
 .AboutKyall1 .div1{
     position: absolute;
     width: 450px;
-    height: 450px;
+    min-height: 450px;
     border: 3px #14306F solid;
     background: #fff;
     margin: 50px;
@@ -18,22 +18,24 @@
 .AboutKyall1 .div2{
     position: absolute;
     width: 450px;
-    height: 450px;
+    min-height: 450px;
     border-radius: 30px;
-    background: url('../../../../assets/Images/about_img.png');
+    background: url('../../../../assets/Images/about_img.svg') no-repeat;
+    background-size: 100%;
     margin: 100px;
 }
 
 .AboutKyall2{
-    background: url('../../../../assets/Images/ثيبسل1.png');
+    background: url('../../../../assets/Images/ثيبسل.svg');
     background-position: center;
-    background-size: 70ch;
-    width: 600px;
-    height: 500px;
+    background-size: 90%;
+    width: 800px;
+    min-height: 600px;
     background-repeat: no-repeat;
     padding: 50px;
-    margin: 30px;
+    // margin: 30px;
     text-align: start;
+    line-height: 40px;
 }
 .AboutKyall2  h4{
     color: #14306F;
@@ -76,13 +78,13 @@
 .ourServices .suB h4{
     color: #fff;
     text-align: center;
-    margin: 60px;
-    padding-top: 50px;
+    // margin: 60px;
+    padding: 50px;
     text-decoration: underline #E8C582 9px;
 }
 .service{
-    height: 233px;
-    width: 587px;
+    // height: 233px y 1874px;
+    // width: 587 x 1277px;
     border: 3px solid #E8C582;
     border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -104,6 +106,8 @@
 }
 .service:hover{
     background-color: #B69149;
+    // height: 233px y 1874px;
+    // width: 587 x 1277px;
     .image{
         display: none;
     }
@@ -113,6 +117,8 @@
 }
 .serBtn{
     color: #fff;
+    width: "50px" !important;
+     height: "50px" !important;
     background-color: #14306F !important;
     border-color: #14306F !important;
     border-radius: 40px !important;
@@ -175,7 +181,7 @@
 
 .whyKhyall{
     background: #14306F;
-    height: 500px;
+    min-height: 500px;
     padding: 50px;
     h3{
         color: #E8C582;
@@ -195,11 +201,11 @@
     font-size: 15px;
 }
 .sectionX{
-    height: 500px;
+    min-height: 500px;
     background: #EFF3FF;
 }
 .whyKhyall2{
-    height: 500px;
+    min-height: 500px;
     background: #EFF3FF;
 }
 .sectionY{
@@ -233,4 +239,64 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+.aboveSlide{
+    min-height: 780px;
+    padding: 150px;
+    h4{
+        font-size: 86px;
+        color: #fff;
+    }
+    p{
+        font-size: 43px;
+        color: #fff;
+    }
+}
+.divv{
+    margin-top: 100px !important;
+}
+.btns{
+    opacity: 100% !important;
+    width: 350px x 978px !important;
+    height: 76px y 761px !important;
+    border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -o-border-radius: 30px !important;
+}
+.divX{
+    height: 11px y 951 px;
+    div{
+        background: #14306F;
+    }
+}
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {   }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+  }
+
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {   }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {   }
+
+@media (max-width: 1024px) { 
+    .AboutKyall1{
+        display: none;
+    }
 }

@@ -6,6 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlModule } from 'ngx-owl-carousel';
+import { PrimeNgModule } from 'src/app/DesignModules/prime-ng.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     HomePageRoutingModule,
     TranslateModule,
     CarouselModule,
-    OwlModule
+    OwlModule,
+    PrimeNgModule
   ]
 })
 export class HomePageModule { }

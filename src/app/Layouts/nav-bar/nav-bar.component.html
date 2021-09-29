@@ -1,28 +1,27 @@
 <div class="content container-fluid p-0">
   <div class="row justify-content-around m-0">
+    <div class="text-center col-1">
+      <span class=""><img width="112" height="90" src="../../../assets/Images/شسيبسيب.svg" alt="not found"></span>
+    </div>
     <div class="col-10 row">
-      <div class="col"></div>
+      <!-- <div class="col"></div> -->
       <div class="col-8">
+        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/home"
+        label="الرئيسية" class="p-button-text text-light"></a>
+        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
+           routerLink="/about-us"
+           label="عن الشركة" class="p-button-text text-light"></a>
+           <a pButton pRipple type="button" label="خدمة العملاء" class="p-button-text text-light"></a>
+           <a pButton pRipple type="button" label="خدمات خيال" class="p-button-text text-light"></a>
+           <a pButton pRipple type="button" label="من أعمالنا" class="p-button-text text-light"></a>
+           <a pButton pRipple type="button" label="العروض الخاصة" class="p-button-text text-light"></a>
+           <a pButton pRipple type="button" label="اتصل بنا" class="p-button-text text-light"></a>
         <a pButton pRipple type="button" *ngIf="language === 'ar'" label="English" (click)="onDetectLag()"
            class="p-button-text text-light"></a>
         <a pButton pRipple type="button" label="Arabic" *ngIf="language === 'en'" (click)="onDetectLag('ar')"
            class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="اتصل بنا" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="العروض الخاصة" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="من أعمالنا" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="خدمة خيال" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="خدمة العملاء" class="p-button-text text-light"></a>
-
-        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
-           routerLink="/about-us"
-           label="عن الشركة" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
-           routerLink="/home"
-           label="الرئيسية" class="p-button-text text-light"></a>
       </div>
-    </div>
-    <div class="text-center col-1">
-      <span class=""><img width="112" height="90" src="../../../assets/Images/شسيبسيب.png" alt="not found"></span>
     </div>
   </div>
 </div>
