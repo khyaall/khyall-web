@@ -16,7 +16,7 @@
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator button {
         background-color: #14306F !important;
-        width: 379.7px !important;
+        width: 24.72vw !important;
         height: 11px !important;
         transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
         border-radius: 0;
@@ -33,4 +33,8 @@
 }
 .p-carousel .p-carousel-indicators .p-carousel-indicator{
     margin-right: 0rem !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    
 }
