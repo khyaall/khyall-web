@@ -13,3 +13,24 @@
 //     background-color: red;
 //     color: red;
 // }
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+        background-color: #14306F !important;
+        width: 379.5px !important;
+        height: 11px !important;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        border-radius: 0;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+    background-color: #B69149 !important;
+}
+.p-carousel .p-carousel-indicators {
+     padding: 0rem !important; 
+}
+.p-carousel .p-carousel-indicators {
+    /* padding: 1rem; */
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator{
+    margin-right: 0rem !important;
+}
