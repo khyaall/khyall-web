@@ -12,6 +12,8 @@ import {LangService} from "../../Services/lang.service";
 export class NavBarComponent implements OnInit {
   language: string | null = localStorage.getItem('khayalWebLang')
   elem:any;
+  oldd: Number = 1;
+  neww: Number = 1;
   constructor(
     // @ts-ignore
     @Inject(DOCUMENT) private document,
@@ -37,6 +39,14 @@ export class NavBarComponent implements OnInit {
     }
     localStorage.setItem('khayalWebLang', this.language);
     this.langService.setLang(this.language);
+  }
+
+  route(id:Number){
+    this.neww = id;
+    document.getElementById(''+this.oldd)?.classList.remove('navX');
+    document.getElementById(''+this.neww)?.classList.add('navX');
+
+    this.oldd = this.neww;
   }
 
 }

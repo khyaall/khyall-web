@@ -26,20 +26,29 @@
 }
 
 .AboutKyall2{
-    background: url('../../../../assets/Images/ثيبسل.svg');
+    background: url('../../../../assets/Images/1ثيبسل.svg');
     background-position: center;
     background-size: 90%;
-    width: 800px;
+    // width: 800px;
     min-height: 600px;
     background-repeat: no-repeat;
-    padding: 50px;
+    // padding: 50px;
     // margin: 30px;
     text-align: start;
     line-height: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 .AboutKyall2  h4{
     color: #14306F;
+    font-size: 40px;
+    padding-bottom: 20px;
     
+}
+.AboutKyall2 p{
+    font-size: 24px;
+    line-height: 40px;
+    color: #707070;
 }
 
 .btn-primary {
@@ -73,13 +82,16 @@
 }
 .ourServices .suB{
     min-height: 700px;
-    background-color: #142f6f8c;
+    background-color: #14306F;
+    opacity: 92%;
 }
 .ourServices .suB h4{
     color: #fff;
     text-align: center;
     // margin: 60px;
     padding: 50px;
+    font-size: 50px;
+    // line-height: 117px;
     text-decoration: underline #E8C582 9px;
 }
 .service{
@@ -117,24 +129,34 @@
 }
 .serBtn{
     color: #fff;
-    width: "50px" !important;
-     height: "50px" !important;
     background-color: #14306F !important;
     border-color: #14306F !important;
-    border-radius: 40px !important;
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+    font-size: 25px;
 }
 .ourProjects{
     background: #F8F8F8;
+    h5{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
 }
 
 .ourProjects .div1{
     color: #14306F;
     p{
-        line-height: 35px;
+        line-height: 59px;
     }
     hr{
         height: 12px;
         background-color: #B69149;
+        opacity: 100%;
     }
 }
 .bnn{
@@ -146,9 +168,9 @@
     width: 200px !important;
 }
 .elgammal{
-    background: url('../../../../assets/Images/elgamal-min.png') no-repeat;
+    background: url('../../../../assets/Images/elgamal-min.svg') no-repeat;
     background-size: 100%;
-    height: 400px;
+    height: 55vh;
     border: 1px solid #14306F;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -156,8 +178,9 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     .aboveDiv{
-        height: 400px;
-        background-color: #142f6f8e;
+        height: 55vh;
+        background-color: #14306F;
+        opacity: 91%;
         border-radius: 15px;
         display: none;
         padding: 30px;
@@ -181,15 +204,16 @@
 
 .whyKhyall{
     background: #14306F;
-    min-height: 500px;
+    min-height: 450px;
     padding: 50px;
     h3{
         color: #E8C582;
-        font-size: 50px;
+        font-size: 45px;
     }
     p{
         color: #fff;
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 70px;
     }
 }
 .titl{
@@ -201,11 +225,11 @@
     font-size: 15px;
 }
 .sectionX{
-    min-height: 500px;
+    min-height: 450px;
     background: #EFF3FF;
 }
 .whyKhyall2{
-    min-height: 500px;
+    min-height: 450px;
     background: #EFF3FF;
 }
 .sectionY{
@@ -217,7 +241,7 @@
     }
     .sunTitle{
         color: #000;
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 // .item{
@@ -232,6 +256,8 @@
 // }
 .slide{
     background: #FFFFFF;
+    width: 290px;
+    height: 180px;
     border: 1px solid #B69149;
     border-radius: 30px;
     //height: 200px !important;
@@ -240,16 +266,19 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+.khyll{
+    font-size: 25px;
+}
 
 .aboveSlide{
     min-height: 780px;
     padding: 150px;
     h4{
-        font-size: 86px;
+        font-size: 75px;
         color: #fff;
     }
     p{
-        font-size: 43px;
+        font-size: 35px;
         color: #fff;
     }
 }
@@ -299,4 +328,18 @@
     .AboutKyall1{
         display: none;
     }
+}
+
+// li.p-star-inserted.p-carousel-indicator{
+//     background: #14306F !important;
+//     height: 11px !important;
+//     width: 445px !important;
+// }
+.indicatorsContentClass{
+    background: #14306F !important;
+}
+.carouselStyle{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../../assets/Images/dfgdhgdgh.svg') no-repeat;
+    background-size: 100%;
+    height: 600px;
 }

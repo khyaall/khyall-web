@@ -1,7 +1,14 @@
 <div class="container-fluid p-0">
     <div>
-    <div class="slidShow" [style]="backgroundStyle">
-        <div class="aboveSlide text-center">
+        <!--  [style]="backgroundStyle" -->
+    <div class="slidShow" dir="ltr">
+        
+        <p-carousel [indicatorsContentStyle]="indicatorsContentStyle" [value]="images" [numVisible]="1"  [showNavigators]="false" [numScroll]="1" [circular]="true" [autoplayInterval]="2000" [responsiveOptions]="responsiveOptions">
+            <ng-template let-image pTemplate="item">
+                <div class="product-item">
+                    <div class="product-item-content">
+                        <div class="p-mb-3" class="carouselStyle">
+                            <div class="aboveSlide text-center">
             <div>
                 <h4>حول تجارتك للعالم الرقمي</h4>
                 <p class="mt-5">فن الإتصالات البصرية هو المعنى الحقيقي لتحقيق أفكارك وبلورتها إلى حقيقة رائعة وهو مايقوم به مصممينا 
@@ -13,21 +20,20 @@
                     <div class="col my-1"><button type="button" class="btn btn-lg btn-primary btns">طلب عرض سعر</button></div>
                 </div>
             </div>
-        </div> 
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
     </div>
-    <!-- <div class="divX row">
-        <div class="col divY"></div>
-        <div class="col divY"></div>
-        <div class="col divY"></div>
-        <div class="col divY"></div>
-    </div> -->
 </div>
-    <div class="AboutKyall row justify-content-around m-0">
+    <div class="AboutKyall row m-0">
         <div class="col-md-5 AboutKyall1">
             <div class="div1"></div>
             <div class="div2"></div>
         </div>
-        <div class="AboutKyall2">
+        <div class="AboutKyall2 col-md-7">
         <div>
             <h4>خيال.. بوابتك الأولى لعالم الأعمال</h4>
             <p>
@@ -47,7 +53,7 @@
     <div class="ourServices">
         <div class="suB">
             <h4>خــــدمـــتـــنا</h4>
-        <div class="container">
+        <div class="mx-5">
             <div class="row row-cols-1 row-cols-lg-3 g-1 g-lg-3">
               <div class="col">
                 <div class="p-3 service">
@@ -56,18 +62,18 @@
                     </div>
                     <p class="text-center pt-4 title">تصميم المواقع الالكترونية</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
               <div class="col">
                 <div class="p-3 service">
                     <div class="text-center image">
-                        <img width="60px" height="60px" src="../../../../assets/Images/mobile-app.svg" alt="">
+                        <img width="60px" height="60px" src="../../../../assets/Images/mobile-app1.svg" alt="">
                     </div>
                     <p class="text-center pt-4 title">تصميم وبرمجة التطبيقات</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -78,18 +84,18 @@
                     </div>
                     <p class="text-center pt-4 title">اســــتـــضــــافــــة الـــمــواقــع</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
               <div class="col ">
                 <div class="p-3 service ">
                     <div class="text-center image">
-                        <img width="60px" height="60px" src="../../../../assets/Images/illustration.svg" alt="">
+                        <img width="60px" height="60px" src="../../../../assets/Images/illustration1.svg" alt="">
                     </div>
                     <p class="text-center pt-4 title">تصميم الــهــويـة الــتـجــاريـة</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -100,18 +106,18 @@
                     </div>
                     <p class="text-center pt-4 title">تصميم المتاجر الالكترونية</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
               <div class="col">
                 <div class="p-3 service">
                     <div class="text-center image">
-                        <img width="60px" height="60px" src="../../../../assets/Images/programming-code-signs.svg" alt="">
+                        <img width="60px" height="60px" src="../../../../assets/Images/programming-code-signs1.svg" alt="">
                     </div>
                     <p class="text-center pt-4 title">البرمجة الخاصة وتطوير المواقع </p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -122,7 +128,7 @@
                     </div>
                     <p class="text-center pt-4 title">خدمات التسويق الالكتروني</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -133,7 +139,7 @@
                     </div>
                     <p class="text-center pt-4 title">خدمات الدعاية والاعلان</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -144,7 +150,7 @@
                     </div>
                     <p class="text-center pt-4 title">االانتاج المرئي والمسموع</p>
                     <div class="text-center butn">
-                        <button type="button" class="btn btn-md serBtn">شاهد الخدمة</button>
+                        <button type="button" class="btn btn-lg mb-1 serBtn">شاهد الخدمة</button>
                     </div>
                 </div>
               </div>
@@ -157,14 +163,14 @@
     <div class="ourProjects py-5">
         <div class="text-center div1">
             <h5>أعمالنا ومشروعاتنا</h5>
-            <p class="col-6 m-auto">
+            <p class="col-md-8 m-auto">
                 لأننا في شركة تقنية حريصين دائماً على جودة الخدمات ورضا العميل اولأ فاننا نشعر بالفخر لأننا استطعنا ان ننال رضا عملائنا 
 بتحويل أفكارهم الى تصميمات وتطبيقات ومواقع احترافية وبجمالية فائقة
             </p>
             <hr class="col-4 m-auto">
         </div>
-        <div class="container px-4 mt-5">
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 m-auto">
+        <div class="container mx-5 px-4 mt-5">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-1 col-md-10 m-auto">
               <div class="col">
                <div class="text-center">
                 <button type="button" class="btn btn-lg btn-primary bnn">كل الأعمال</button>
@@ -192,18 +198,18 @@
                </div>
             </div>
           </div>
-          <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-lg-3 g-1 g-lg-3">
-              <div class="col">
+          <div class="mx-5 mt-5">
+            <div class="row row-cols-1 row-cols-lg-3 g-1 g-lg-5">
+              <div class="col-md-3">
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row col">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -215,29 +221,12 @@
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row col">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
-                            </div>
-                        </div>
-                        <br><br><br>
-                        <p class="text-center">اسم الموقع هنا</p>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="elgammal">
-                    <div class="aboveDiv">
-                        <br><br><br><br>
-                        <div class="row col-8 m-auto">
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
-                            </div>
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -249,29 +238,12 @@
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
-                            </div>
-                        </div>
-                        <br><br><br>
-                        <p class="text-center">اسم الموقع هنا</p>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="elgammal">
-                    <div class="aboveDiv">
-                        <br><br><br><br>
-                        <div class="row col-8 m-auto">
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
-                            </div>
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -283,29 +255,12 @@
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
-                            </div>
-                        </div>
-                        <br><br><br>
-                        <p class="text-center">اسم الموقع هنا</p>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="elgammal">
-                    <div class="aboveDiv">
-                        <br><br><br><br>
-                        <div class="row col-8 m-auto">
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
-                            </div>
-                            <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -317,12 +272,12 @@
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -334,12 +289,63 @@
                 <div class="elgammal">
                     <div class="aboveDiv">
                         <br><br><br><br>
-                        <div class="row col-8 m-auto">
+                        <div class="row">
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/click.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
                             </div>
                             <div class="col text-center">
-                                <img src="../../../../assets/Images/maximize.png" alt="">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <p class="text-center">اسم الموقع هنا</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="elgammal">
+                    <div class="aboveDiv">
+                        <br><br><br><br>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img height="70px" width="70px"  src="../../../../assets/Images/click.svg" alt="">
+                            </div>
+                            <div class="col text-center">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <p class="text-center">اسم الموقع هنا</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="elgammal">
+                    <div class="aboveDiv">
+                        <br><br><br><br>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
+                            </div>
+                            <div class="col text-center">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <p class="text-center">اسم الموقع هنا</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="elgammal">
+                    <div class="aboveDiv">
+                        <br><br><br><br>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img height="70px" width="70px" src="../../../../assets/Images/click.svg" alt="">
+                            </div>
+                            <div class="col text-center">
+                                <img height="70px" width="70px" src="../../../../assets/Images/maximize.svg" alt="">
                             </div>
                         </div>
                         <br><br><br>
@@ -363,7 +369,7 @@
                       <div class="col-6">
                         <div class="p-3">
                             <div class="text-center">
-                                <img src="../../../../assets/Images/research.png" alt="">
+                                <img src="../../../../assets/Images/research.svg" alt="">
                             </div><br>
                             <p class="text-center titl">الدراسة والتحليل</p>
                             <p class="text-center sub">لنبداء دائما يكون هناك خطوة اولي لتنفيذ العمل باحترافية تامة
@@ -373,7 +379,7 @@
                       <div class="col-6">
                         <div class="p-3">
                             <div class="text-center">
-                                <img src="../../../../assets/Images/illustration.png" alt="">
+                                <img src="../../../../assets/Images/illustration.svg" alt="">
                             </div><br>
                             <p class="text-center titl">تصميم UI-UX</p>
                             <p class="text-center sub">تصميم الموقع يحتاج إلى مزيج من إحترافية التصميم وذوق في 
@@ -384,7 +390,7 @@
                       <div class="col-6">
                         <div class="p-3">
                             <div class="text-center">
-                                <img src="../../../../assets/Images/mobile-app.png" alt="">
+                                <img src="../../../../assets/Images/mobile-app.svg" alt="">
                             </div><br>
                             <p class="text-center titl">التوافق مع الأجهزة</p>
                             <p class="text-center sub">
@@ -396,7 +402,7 @@
                       <div class="col-6">
                         <div class="p-3">
                             <div class="text-center">
-                                <img src="../../../../assets/Images/programming-code-signs.png" alt="">
+                                <img src="../../../../assets/Images/programming-code-signs.svg" alt="">
                             </div><br>
                             <p class="text-center titl">البرمجه والتطوير</p>
                             <p class="text-center sub">الإختيار الأمثل للمنصة ولغة البرمجة المستخدمة هو من أهم
@@ -416,44 +422,44 @@
   <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-        <img src="../../../../assets/Images/ثيبسل.png" alt="">
-        <h3>خيال للخدمات التكنولوجية</h3>
+        <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+        <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
        </div>
     </ng-template>  
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template>  
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template> 
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template> 
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template>  
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template> 
     <ng-template carouselSlide>
         <div class="text-center mx-3 slide">
-            <img src="../../../../assets/Images/ثيبسل.png" alt="">
-            <h3>خيال للخدمات التكنولوجية</h3>
+            <img width="100px" height="100px" src="../../../../assets/Images/ثيبسل.svg" alt="">
+            <h3 class="mt-3 khyll">خيال للخدمات التكنولوجية</h3>
            </div>
     </ng-template>  
   </owl-carousel-o>

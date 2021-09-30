@@ -1,5 +1,5 @@
 .main{
-    height: 200px;
+    min-height: 200px;
     background: #1A1A1A;
 }
 .para{
@@ -8,7 +8,7 @@
     font-size: 20px;
 }
 .align-items-end{
-    height: 200px !important;
+    min-height: 200px !important;
 }
 .copy{
     color: #fff;

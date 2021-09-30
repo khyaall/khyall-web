@@ -16,6 +16,24 @@ export class HomePageComponent implements OnInit {
   timer2: any;
   j=0;
   imgSrc = ['dfgdhgdgh.svg','dfgdhgdgh.svg','dfgdhgdgh.svg','dfgdhgdgh.svg'];
+  images =[
+    {
+      id: 1,
+      src: 'dfgdhgdgh.svg'
+    },
+    {
+      id: 2,
+      src: 'dfgdhgdgh.svg'
+    },
+    {
+      id: 3,
+      src: 'dfgdhgdgh.svg'
+    },
+    {
+      id: 4,
+      src: 'dfgdhgdgh.svg'
+    },
+  ]
   backgroundStyle = "background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../../assets/Images/"+this.imgSrc[this.i]+"') no-repeat;background-size: cover; height: 780px;"
   constructor(
     private langService: LangService) {
@@ -72,19 +90,42 @@ export class HomePageComponent implements OnInit {
     rtl: true,
     responsive: {
       0: {
-        items: 1
-      },
-      400: {
         items: 2
       },
-      740: {
+      400: {
         items: 3
       },
-      940: {
+      740: {
         items: 4
+      },
+      940: {
+        items: 5
       }
     },
     nav: true
   }
+
+  responsiveOptions = [
+    {
+        breakpoint: '1024px',
+        numVisible: 1,
+        numScroll: 1
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 1,
+        numScroll: 1
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+    }
+];
+indicatorsContentStyle={
+  color: 'red'
+}
+
+  
 }
 

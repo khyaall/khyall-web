@@ -1,27 +1,66 @@
-<div class="content container-fluid p-0">
+<!-- <div class="content container-fluid p-0">
   <div class="row justify-content-around m-0">
     <div class="text-center col-1">
-      <span class=""><img width="112" height="90" src="../../../assets/Images/شسيبسيب.svg" alt="not found"></span>
+      <span class=""><img width="112" height="90" src="../../../assets/Images/1شسيبسيب.svg" alt="not found"></span>
     </div>
     <div class="col-10 row">
-      <!-- <div class="col"></div> -->
-      <div class="col-8">
-        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
-        routerLink="/home"
-        label="الرئيسية" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
-           routerLink="/about-us"
-           label="عن الشركة" class="p-button-text text-light"></a>
-           <a pButton pRipple type="button" label="خدمة العملاء" class="p-button-text text-light"></a>
-           <a pButton pRipple type="button" label="خدمات خيال" class="p-button-text text-light"></a>
-           <a pButton pRipple type="button" label="من أعمالنا" class="p-button-text text-light"></a>
-           <a pButton pRipple type="button" label="العروض الخاصة" class="p-button-text text-light"></a>
-           <a pButton pRipple type="button" label="اتصل بنا" class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" *ngIf="language === 'ar'" label="English" (click)="onDetectLag()"
-           class="p-button-text text-light"></a>
-        <a pButton pRipple type="button" label="Arabic" *ngIf="language === 'en'" (click)="onDetectLag('ar')"
-           class="p-button-text text-light"></a>
+      <div class="col links">
+        <a  id="1" (click)="route(1)"
+          routerLink="/home" class="navX mx-2 text-light">الرئيسية</a>
+        <a  id="2" (click)="route(2)"
+          routerLink="/about-us"class="mx-2 text-light">عن الشركة</a>
+        <a  id="3" (click)="route(3)" class=" mx-2 text-light">خدمة العملاء</a>
+        <a  id="4" (click)="route(4)" class=" mx-2 text-light">خدمات خيال</a>
+        <a  id="5" (click)="route(5)"  class="mx-2  text-light">من أعمالنا</a>
+        <a  id="6" (click)="route(6)" class="mx-2  text-light">العروض الخاصة</a>
+        <a  id="7" (click)="route(7)"  class="mx-2  text-light">اتــصــل بــنــا</a>
+        <a  id="8" (click)="route(8)" *ngIf="language === 'ar'"  (click)="onDetectLag()"
+          class="mx-2  text-light">English</a>
+        <a  id="9" (click)="route(9)"  *ngIf="language === 'en'" (click)="onDetectLag('ar')"
+          class="mx-2  text-light">Arabic</a>
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<nav class="content navbar navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <span class=""><img width="112" height="90" src="../../../assets/Images/1شسيبسيب.svg" alt="not found"></span>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  id="1" (click)="route(1)"
+          routerLink="/home" class="navX mx-2 text-light">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a  id="2" (click)="route(2)"
+          routerLink="/about-us"class="mx-2 text-light">عن الشركة</a>
+        </li>
+        <li class="nav-item">
+          <a  id="3" (click)="route(3)" class=" mx-2 text-light">خدمة العملاء</a>
+        </li>
+        <li class="nav-item">
+          <a  id="4" (click)="route(4)" class=" mx-2 text-light">خدمات خيال</a>
+        </li>
+        <li class="nav-item">
+          <a  id="5" (click)="route(5)"  class="mx-2  text-light">من أعمالنا</a>
+        </li>
+        <li class="nav-item">
+          <a  id="6" (click)="route(6)" class="mx-2  text-light">العروض الخاصة</a>
+        </li>
+        <li class="nav-item">
+          <a  id="7" (click)="route(7)"  class="mx-2  text-light">اتــصــل بــنــا</a>
+        </li>
+        <li class="nav-item">
+          <a  id="8" (click)="route(8)" *ngIf="language === 'ar'"  (click)="onDetectLag()"
+            class="mx-2  text-light">English</a>
+            <a  id="9" (click)="route(9)"  *ngIf="language === 'en'" (click)="onDetectLag('ar')"
+            class="mx-2  text-light">Arabic</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
