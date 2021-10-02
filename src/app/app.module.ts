@@ -11,6 +11,9 @@ import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
 import { WidgetsModule } from './Widgets/widgets.module';
 import { LayoutModule } from './Layouts/layout.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+// import 
+// {AngularFontAwesomeModule}
+//  from 'angular-font-awesome';
 // import { OwlModule } from 'ngx-owl-carousel';
 
 export function HttpLoaderFactory(http: HttpClient){
@@ -37,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient){
     LayoutModule,
     WidgetsModule,
     CarouselModule,
+    // AngularFontAwesomeModule
     // OwlModule
   ],
   providers: [Document],

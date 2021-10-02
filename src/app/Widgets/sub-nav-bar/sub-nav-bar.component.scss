@@ -4,6 +4,7 @@
     background: #fff;
 }
 
+
 .div1{
     border: 1px solid #14306F;
     border-radius: 50%;
@@ -13,13 +14,20 @@
     -o-border-radius: 50%;
     width: 35px !important;
     height: 35px;
-    padding: 5px;
+    padding: 7px;
+    i{
+        font-size: 18px;
+        color: #14306F;
+    }
 }
 .align-items-center{
     height: 84px;
 }
 .div1:hover{
     background: #B69149;
+    i{
+        color: #fff;
+    }
 }
 .para{
     color: #14306F;

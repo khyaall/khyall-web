@@ -1,11 +1,15 @@
-.main{
+.subMain{
     background:
-    linear-gradient(rgba(20, 48, 111, 0.94), rgba(20, 48, 111, 0.94)), url('../../../assets/Images/World-Map-Transparent-Background-PNG.svg') no-repeat;
+    url('../../../assets/Images/salma4.png') no-repeat;
     background-position: center;
-    background-size: 100%;
-    min-height: 600px;
+    background-size: 130%;
+    min-height: 800px;
 }
-
+// linear-gradient(rgba(20, 48, 111, 0.94), rgba(20, 48, 111, 0.94)), 
+.main{
+    min-height: 800px;
+    background: #14306F;
+}
 .headers{
     font-size: 30px;
     color: #fff;
@@ -13,7 +17,7 @@
 hr{
     width: 73px;
     height: 6px;
-    background-color: #E8C582;
+    background-color: #E8C582; 
     opacity: 100%;
 }
 .paragragh{
@@ -21,9 +25,13 @@ hr{
     color: #fff;
     line-height: 42px;
     text-align: start;
+    opacity: 100%;
+}
+.btns{
+    padding: 0px;
 }
 .btn{
-    width: 240px !important;
+    width: 190px !important;
     //x709pxheight: 35px !important;
     //y6288pxfont-size: 16px;
     padding: 0px  !important;
@@ -48,5 +56,13 @@ hr{
 .contactUs{
     font-size: 20px;
     color: #fff;
-    line-height: 40px;
+    line-height: 35px;
+}
+
+.endFooter{
+    height: 32px;
+    background: #B69149;
+}
+.contactHr{
+    margin-right: 90px;
 }

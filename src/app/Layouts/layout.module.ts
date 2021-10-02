@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { PrimeNgModule } from '../DesignModules/prime-ng.module';
 import { FooterComponent } from './footer/footer.component';
+import { WidgetsModule } from '../Widgets/widgets.module';
 
 
 
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
     RouterModule,
     TranslateModule,
-    PrimeNgModule
+    PrimeNgModule,
+    WidgetsModule
   ],
   exports: [
     NavBarComponent, 

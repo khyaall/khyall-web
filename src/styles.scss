@@ -35,6 +35,17 @@
     margin-right: 0rem !important;
 }
 
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: none !important;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 @media only screen and (min-width: 1200px) {
     
 }
