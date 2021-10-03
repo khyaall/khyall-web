@@ -116,8 +116,55 @@
     color: #fff;
     font-size: 30px;
 }
+//
+.service::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    .image{
+        display: none;
+         }
+                 .butn{
+                     display: block;
+                 }
+  }
+  
+  .service:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+    .image{
+        display: none;
+         }
+                 .butn{
+                     display: block;
+                 }
+  }
+  
+  .service::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #B69149;
+    z-index: -1;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
+  
+  .service {
+    position: relative;
+    // font-size: 5rem;
+  }
+// 
 .service:hover{
-    background-color: #B69149;
+    // background-color: #B69149;
     // height: 233px y 1874px;
     // width: 587 x 1277px;
     .image{
