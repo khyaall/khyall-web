@@ -5,7 +5,7 @@
 a{
     // margin-top: 45px;
     font-weight: bold !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     text-decoration: none !important;
 }
 // a:active{
@@ -13,7 +13,7 @@ a{
 //     text-decoration: underline #B69149 14px;
 // }
 .navX{
-    border-bottom: 4px solid #B69149 !important;
+    border-bottom: 5px solid #B69149 !important;
 }
 .links{
     padding: 33px !important;
@@ -22,8 +22,12 @@ a{
 .content a{
     padding-left: 10px !important;
     padding-right: 10px !important;
-    padding-bottom: 13px !important;
+    padding-bottom: 14px !important;
 }
 .navbar-nav{
     margin: 0px !important;
+}
+
+.item{
+    border-left: 1px solid rgba($color: #B69149, $alpha: 0.29);
 }

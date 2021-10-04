@@ -248,18 +248,20 @@
 .elgammal:hover{
     .aboveDiv{
         animation-name: transAnm;
-        animation-duration: 9s;
+        animation-duration: 1s;
         display: block;
 }
 }
 
+
 @keyframes transAnm {
     0%   {clip-path:circle(0%);}
-    25%  {clip-path:circle(250%);}
+    25%  {clip-path:circle(25%);}
     50%  {clip-path:circle(50%);}
     75%  {clip-path:circle(75%);}
     100% {clip-path:circle(100%);}
   }
+ 
 
 .whyKhyall{
     background: #14306F;
