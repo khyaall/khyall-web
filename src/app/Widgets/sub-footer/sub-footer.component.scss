@@ -1,13 +1,15 @@
-.main{
+.XMain{
    height: 180px;
+   z-index: 99;
+   opacity: 1;
     background: #1A1A1A;
 }
-.para{
+.parag{
     border-left: 1px solid #E8C582;
     color: #fff;
     font-size: 20px;
 }
-.para a{
+.parag a{
     text-decoration: none;
     color: #fff;
 }

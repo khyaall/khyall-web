@@ -1,14 +1,40 @@
 .subMain{
+    // background:
+    // url('../../../assets/Images/salma4.png') no-repeat;
+    // background-position: center;
+    // background-size: 130%;
+    min-height: 800px;
+    // background: #14306F;
+    display: block;
+    position: relative;
+}
+
+// div {
+//     width: 200px;
+//     height: 200px;
+//     display: block;
+//     position: relative;
+//   }
+  
+  .subMain::after {
+    content: "";
     background:
-    url('../../../assets/Images/salma4.png') no-repeat;
+    url('../../../assets/Images/World-Map-Transparent-Background-PNG.svg') no-repeat;
     background-position: center;
     background-size: 130%;
-    min-height: 800px;
-}
+     opacity: 0.14;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;   
+  }
 // linear-gradient(rgba(20, 48, 111, 0.94), rgba(20, 48, 111, 0.94)), 
 .main{
     min-height: 800px;
     background: #14306F;
+    z-index: -2;
 }
 .headers{
     font-size: 30px;
@@ -29,6 +55,7 @@ hr{
 }
 .btns{
     padding: 0px;
+    z-index: 5;
 }
 .btn{
     width: 190px !important;
@@ -62,7 +89,31 @@ hr{
 .endFooter{
     height: 32px;
     background: #B69149;
+    z-index: 5;
+    position: relative;
 }
 .contactHr{
     margin-right: 90px;
 }
+
+.XMain{
+    height: 180px;
+    background: #1A1A1A;
+    position: relative;
+    z-index: 5;
+ }
+ .parag{
+     border-left: 1px solid #E8C582;
+     color: #fff;
+     font-size: 20px;
+ }
+ .parag a{
+     text-decoration: none;
+     color: #fff;
+ }
+ .align-items-end{
+     height: 200px !important;
+ }
+ .copy{
+     color: #fff;
+ }
